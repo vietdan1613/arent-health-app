@@ -27,7 +27,7 @@ const DropdownMenu = ({ label = 'Menu', items = [] }) => {
             </div>
             {
                 open && (
-                    <div className="absolute z-10 right-0 mt-2 w-[280px] bg-white border-gray-200  shadow-lg">
+                    <div className="absolute z-50 right-0 mt-2 w-[280px] bg-white border-gray-200  shadow-lg">
                         <ul className="py-1]">
                             {items.map((item, index) => (
                                 <li

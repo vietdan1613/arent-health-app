@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'Noto Sans JP', 'sans-serif'],
+        sans: ['Noto Sans JP', 'Inter', 'sans-serif'],
       },
       colors: {
         white: '#FFFFFF', // ホワイト: backgrounds or text on dark bg
@@ -41,5 +41,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 }

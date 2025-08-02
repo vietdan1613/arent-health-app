@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="bg-dark-500 text-white text-sm h-[128px] mt-8">
-            <div className="flex gap-20 max-w-[1280px] mx-auto items-center h-full">
+        <footer className="bg-dark-500 text-white text-sm h-[128px] mt-8 flex items-center justify-center">
+            <div className="flex gap-20 max-w-[1280px] items-center h-full">
                 <p>会員登録</p>
                 <p>運営会社</p>
                 <p>利用規約</p>

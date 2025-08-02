@@ -1,15 +1,17 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import NaviMemo from './NaviMemo';
 import DropdownMenu from './DropdownMenu';
 
 export default function Header() {
+    const navigate = useNavigate();
+
     const menuItems = [
-        { label: '自分の記録', onClick: () => alert('Go to Profile') },
-        { label: '体重グラフ', onClick: () => alert('Go to Settings') },
-        { label: '目標', onClick: () => alert('Logging out...') },
-        { label: '選択中のコース', onClick: () => alert('Logging out...') },
-        { label: 'コラム一覧', onClick: () => alert('Logging out...') },
-        { label: '設定', onClick: () => alert('Logging out...') },
+        { label: '自分の記録', onClick: () => { } },
+        { label: '体重グラフ', onClick: () => { } },
+        { label: '目標', onClick: () => { } },
+        { label: '選択中のコース', onClick: () => { } },
+        { label: 'コラム一覧', onClick: () => navigate('/column') },
+        { label: '設定', onClick: () => { } },
     ];
     return (
         <nav className='bg-dark-500'>

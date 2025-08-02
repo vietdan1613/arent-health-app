@@ -1,6 +1,6 @@
 import React from 'react'
 import FilterButton from '../components/FilterButton'
-import Photo from '../components/Photo'
+import CardPhoto from '../components/CardPhoto'
 import Button from '../components/Button'
 
 const MainPage = () => {
@@ -17,7 +17,6 @@ const MainPage = () => {
                     </div>
 
                     <div className='bg-black flex-1 '>
-                        <span>Graph Area</span>
                     </div>
                 </div>
             </div>
@@ -31,28 +30,28 @@ const MainPage = () => {
 
             <div>
                 <div class="flex gap-2 flex-wrap items-center justify-center px-[140px]">
-                    <Photo
+                    <CardPhoto
                         src={"/imgs/m01.jpg"}
                         label='05.21.Morning' />
-                    <Photo
+                    <CardPhoto
                         src={"/imgs/d02.jpg"}
                         label='05.21.Lunch' />
-                    <Photo
+                    <CardPhoto
                         src={"/imgs/m02.jpg"}
                         label='05.21.Dinner' />
-                    <Photo
+                    <CardPhoto
                         src={"/imgs/d01.jpg"}
                         label='05.21.Snack' />
-                    <Photo
+                    <CardPhoto
                         src={"/imgs/s01.jpg"}
                         label='05.20.Morning' />
-                    <Photo
+                    <CardPhoto
                         src={"/imgs/m03.jpg"}
                         label='05.20.Lunch' />
-                    <Photo
+                    <CardPhoto
                         src={"/imgs/d02.jpg"}
                         label='05.20.Dinner' />
-                    <Photo
+                    <CardPhoto
                         src={"/imgs/m01.jpg"}
                         label='05.21.Snack' />
                 </div>
