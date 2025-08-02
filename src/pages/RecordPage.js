@@ -30,7 +30,7 @@ const RecordPage = () => {
             </div>
 
             {/* body record chart */}
-            <div className='bg-dark-600 h-[304px] mt-16 text-white px-4 py-3'>
+            <div className='bg-dark-500 h-[304px] mt-16 text-white px-4 py-3'>
                 <div className='flex flex-wrap items-center gap-2'>
                     <p className='w-full sm:w-[96px]' style={{ fontSize: "15px" }}>BODY RECORD</p>
                     <p style={{ fontSize: "22px" }}>2021.05.21</p>

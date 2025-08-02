@@ -10,3 +10,22 @@ body {
 code {
   font-family: 'Source Code Pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+body {
+  scrollbar-width: thin;           /* Firefox */
+  scrollbar-color: #FFCC21 #777777;   /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #777777;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFCC21;
+  border-radius: 10px;
+  border: 2px solid #777777;
+}
