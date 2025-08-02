@@ -20,7 +20,9 @@ export default function Header() {
                     <Link to="/">
                         <img src="/icons/logo.svg" alt="Logo" className="w-[114px] h-[64px]" />
                     </Link>
-                    <div className="text-white flex items-center">
+
+                    {/* Desktop Menu */}
+                    <div className="text-white hidden md:flex items-center">
                         <NaviMemo
                             iconSrc="/icons/icon_memo.svg"
                             text="自分の記録"
@@ -38,6 +40,7 @@ export default function Header() {
                         />
                         <DropdownMenu label="My Account" items={menuItems} />
                     </div>
+
                 </div>
             </div>
         </nav>
