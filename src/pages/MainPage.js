@@ -2,7 +2,7 @@ import React from 'react'
 import FilterButton from '../components/FilterButton'
 import CardPhoto from '../components/CardPhoto'
 import Button from '../components/Button'
-
+import BodyRecordChart from '../components/BodyRecordChart'
 const MainPage = () => {
     return (
         <div className='max-w-[1280px] mx-auto'>
@@ -16,7 +16,8 @@ const MainPage = () => {
                         />
                     </div>
 
-                    <div className='bg-black flex-1 '>
+                    <div className='bg-dark-600 flex-1 flex justify-center items-center text-white px-16 py-2'>
+                        <BodyRecordChart data={chart_data} />
                     </div>
                 </div>
             </div>
@@ -63,5 +64,20 @@ const MainPage = () => {
         </div>
     )
 }
+
+const chart_data = [
+    { month: '6月', weight: 75, fat: 75 },
+    { month: '7月', weight: 74, fat: 74 },
+    { month: '8月', weight: 65, fat: 72 },
+    { month: '9月', weight: 72, fat: 71 },
+    { month: '10月', weight: 69, fat: 68 },
+    { month: '11月', weight: 67, fat: 67 },
+    { month: '12月', weight: 70, fat: 65 },
+    { month: '1月', weight: 65, fat: 64 },
+    { month: '2月', weight: 64, fat: 63 },
+    { month: '3月', weight: 62, fat: 60 },
+    { month: '4月', weight: 60, fat: 59 },
+    { month: '5月', weight: 59, fat: 58 },
+];
 
 export default MainPage
