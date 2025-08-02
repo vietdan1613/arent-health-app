@@ -1,70 +1,95 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive health tracking web application based on the provided design and requirements. Built with React for UI rendering, chart visualization, and routing.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Problem Statement
 
-### `npm start`
+The task is to implement the frontend of a healthcare web application based on a given Figma design. The app includes:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Top Page** (after login): Shows achievement rates, weight/fat graphs, meal history, and a button to input data.
+- **My Record Page**: Displays graph of body fat %, exercise records, diaries, and entry navigation.
+- **Column Page**: A public page showing health-related articles.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## Solution
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project is implemented using the following stack:
 
-### `npm run build`
+- **React** for UI and routing
+- **React Router DOM** for page navigation
+- **Recharts** for graph visualization
+- **Tailwind CSS** for styling
+- **Mocked API services** (static JSON) to simulate backend responses
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+All components are modular and follow clear separation of concerns between UI and data logic.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Development Setup
 
-### `npm run eject`
+### ✅ Requirements
+- Node.js `16.13.1`
+- npm `^6.14.15`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 📦 Install Dependencies
+```bash
+npm install
+````
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🚀 Run the App
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npm start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+> The app will start at: [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🧪 Operation Verification Procedure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To verify the application works as expected:
 
-### Code Splitting
+1. **Start the app** using `npm start`.
+2. Navigate through these pages:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   * `/` → Top Page (mocked post-login)
+   * `/my-record` → My Record Page
+   * `/column` → Column Page
+3. Verify:
 
-### Analyzing the Bundle Size
+   * Layout and styling match the Figma design.
+   * Graphs display correctly based on mock data.
+   * Buttons navigate to expected sections.
+   * Responsive layout works on desktop and mobile.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📁 Folder Structure (Simplified)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+public/
+├── imgs/              # Static images
+├── icons/             # Static icons
+src/
+├── components/        # Shared UI components
+├── pages/             # TopPage, MyRecord, ColumnPage
+├── services/          # API mock/fetch logic
+├── routes/            # App routing
+├── App.js             # App entry point
+└── main.js            # ReactDOM render
+```
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Notes
 
-### Deployment
+* `.git` folder is included in the submission as required.
+* All development was tracked using Git with atomic commits.
+* `node_modules` is excluded from the archive.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
