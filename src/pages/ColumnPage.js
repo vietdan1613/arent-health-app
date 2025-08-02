@@ -5,6 +5,7 @@ import CardPhotoDescription from '../components/CardPhotoDescription'
 const ColumnPage = () => {
     return (
         <div className='max-w-[960px] mx-auto'>
+            {/* recommended */}
             <div className='flex items-center justify-between  mt-16'>
                 <CardRecommanded label='RECOMMENDED COLUMN'
                     description='オススメ' />
@@ -16,6 +17,7 @@ const ColumnPage = () => {
                     description='健康' />
             </div>
 
+            {/* photos */}
             <div className='mt-16'>
                 <p style={{ fontSize: "22px" }}>MY DIARY</p>
                 <div className='grid grid-cols-4 gap-x-2 gap-y-4 mt-1'>

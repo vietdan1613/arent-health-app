@@ -4,7 +4,7 @@ import CardPhoto from '../components/CardPhoto'
 import Button from '../components/Button'
 import BodyRecordChart from '../components/BodyRecordChart'
 import { fetchBodyGraphData } from "../services/api";
-
+import ThreeQuarterCircleSvg from '../components/ThreeQuarterCircleSvg'
 const MainPage = () => {
     const [graphData, setGraphData] = useState(null);
 
@@ -14,14 +14,18 @@ const MainPage = () => {
 
     return (
         <div className='max-w-[1280px] mx-auto'>
+            {/* panel */}
             <div className='bg-red-500'>
                 <div className='flex h-[312px] justify-between'>
-                    <div className='overflow-hidden bg-gray-100 w-[540px] shadow-md'>
+                    <div className='overflow-hidden relative w-[540px] shadow-md'>
                         <img
                             src='/imgs/d01.jpg'
                             className='object-cover w-full h-full'
                             alt='Main Visual'
                         />
+                        <div className="absolute absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
+                            <ThreeQuarterCircleSvg />
+                        </div>
                     </div>
 
                     <div className='bg-dark-600 flex-1 flex justify-center items-center text-white px-16 py-2'>
@@ -30,6 +34,7 @@ const MainPage = () => {
                 </div>
             </div>
 
+            {/* menu */}
             <div className='flex py-8 gap-[64px] items-center justify-center'>
                 <FilterButton text='Morning' />
                 <FilterButton text='Lunch' />
@@ -37,6 +42,7 @@ const MainPage = () => {
                 <FilterButton text='Snack' />
             </div>
 
+            {/* photos */}
             <div>
                 <div class="flex gap-2 flex-wrap items-center justify-center px-[140px]">
                     <CardPhoto
